@@ -1,5 +1,4 @@
-// Initiate animations
-// @Todo: optimise
+
 var initAnimations = function() {
     var $animatable = $('.revealOnScroll');
     $animatable.each( function() {
@@ -44,27 +43,27 @@ $(document).ready(function() {
         var scrolled = $window.scrollTop(),
             win_height_padded = $window.height() * 1.1;
 
-        // Is animation showing?
+        
         $(".revealOnScroll:not(.animateSVG)").each(function () {
 
-            // animation scrolled into view
+           
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            // Add the animated class to trigger the animation
+            
             if (scrolled + win_height_padded > offsetTop) {
                 $this.addClass('animateSVG');
             }
         });
 
-        // Is animation NOT showing?
+        
         $(".revealOnScroll.animateSVG").each(function () {
 
-            // animation scrolled into view
+            
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            //Remove the animated class that triggers the animation
+            
             if (scrolled + win_height_padded < offsetTop) {
                 $this.removeClass('animateSVG');
             }
@@ -77,11 +76,11 @@ $(document).ready(function() {
 
         $(".revealOnScrollDelayed:not(.delayAnimateSVG)").each(function () {
 
-            // animation scrolled into view
+            
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            // Add the animated class to trigger the animation
+            
             if (scrolled + win_height_padded > offsetTop) {
                 $this.addClass('delayAnimateSVG');
             }
@@ -89,11 +88,11 @@ $(document).ready(function() {
 
         $(".revealOnScrollDelayed.delayAnimateSVG").each(function () {
 
-            // animation scrolled into view
+            
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            //Remove the animated class that triggers the animation
+            
             if (scrolled + win_height_padded < offsetTop) {
                 $this.removeClass('delayAnimateSVG');
             }
@@ -106,11 +105,11 @@ $(document).ready(function() {
 
         $(".revealOnScrollDelayedLast:not(.delayAnimateSVGLast)").each(function () {
 
-            // animation scrolled into view
+            
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            // Add the animated class to trigger the animation
+            
             if (scrolled + win_height_padded > offsetTop) {
                 $this.addClass('delayAnimateSVGLast');
             }
@@ -118,17 +117,17 @@ $(document).ready(function() {
 
         $(".revealOnScrollDelayedLast.delayAnimateSVGLast").each(function () {
 
-            // animation scrolled into view
+           
             var $this = $(this);
             var offsetTop = $this.offset().top;
 
-            //Remove the animated class that triggers the animation
+            
             if (scrolled + win_height_padded < offsetTop) {
                 $this.removeClass('delayAnimateSVGLast');
             }
         });
     }
-    // Start the initiation for the animations
+    
     initAnimations();
     initAnimationsDelayed();
     initAnimationsDelayedLast();

@@ -354,17 +354,13 @@ div.divider {
     fill: transparent;
 }
 
-/* Overall Animate SVG Class for the lines on hover
-* REF: JS (function revealOnScroll)
-*/
+
 .animateSVG {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.7s ease-out;
 }
 
-/* Animate SVG Class for the delayed SVG class
-* REF: JS (function revealOnScrollDelayed)
-*/
+
 .delayAnimateSVG {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s ease-in 0.65s;
@@ -375,9 +371,7 @@ div.divider {
     transition: stroke-dashoffset 1.7s ease-out;
 }
 
-/* Animate SVG Class for the delayed Last SVG class
-* REF: JS (function revealOnScrollDelayedLast)
-*/
+
 .delayAnimateSVGLast {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s ease-out 0.80s;
@@ -413,10 +407,7 @@ div.divider {
     transition: stroke-dashoffset 0.5s ease-in 0.65s;
 }
 
-/* Class for ALL straight line svg animations
-* These will be inherited by the single line paths
-***************************************************
-*/
+
 .svg-straight-lines, #lineD, #lineE, #lineF, #lineH, #lineJ, #lineK, #lineL, #lineN, #lineP, #lineQ, #lineR, #lineS, #lineT, #lineLeft, #lineRight, #lineLeft1, #lineRight2, #lineLeft3, #lineRight4 {
     stroke-width: 5;
     fill: none;
